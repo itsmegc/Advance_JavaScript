@@ -1,0 +1,61 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body>
+ 
+   <h1>Focus and blur</h1>
+    
+    
+     <button type="button" id="btn1">open window</button>
+        
+ <button type="button" id="btn2">Focus</button>
+        
+
+    
+    <button type="button" id="btn3">Blur</button>
+     
+</body>
+    
+    <script>
+    var newWindow;
+        
+        
+        
+        function openWin(){
+            
+            newWindow=window.open("","_blank","width=300,height=200");
+            
+        }
+          
+        
+        
+        function FocusWin(){
+       newWindow.focus();       
+        }
+       
+          
+        
+        function BlurWin(){
+            
+            
+       newWindow.blur();       
+        }
+       
+        
+        
+        document.getElementById("btn1").addEventListener("click",openWin);
+        
+         document.getElementById("btn2").addEventListener("click",FocusWin);
+        
+         document.getElementById("btn3").addEventListener("click",BlurWin);
+        
+        
+        
+
+   </script>
+    
+</html> 

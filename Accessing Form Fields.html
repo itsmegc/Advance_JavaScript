@@ -1,0 +1,79 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+
+    <body>
+ 
+  <form action=""  name="myform" id="myformid">
+        
+        Username:<input type="text" name="m_username_field" id="uid" value="Batman"><br/><br/>
+        
+        Password:<input type="password" name="m_password_field" id="pid"><br/><br/>
+      
+       <input type="submit" name="m_sbtn" value="Submit">
+        </form><br/><br/>
+     
+     
+      
+    <script>
+        
+       //1. //getElementById
+        
+      /*  
+        var uname1=document.getElementById("uid");
+        
+        console.log(uname1);
+        
+         console.log(uname1.name);
+         console.log(uname1.type);
+         console.log(uname1.id);
+        
+      */  
+        
+        
+       //2. //With Element index number
+        
+        
+       /* var uname2=document.myform.elements[2];
+        
+        console.log(uname2);
+        
+         console.log(uname2.name);
+         console.log(uname2.type);
+         console.log(uname2.id);
+        
+        */
+        
+        
+          //3. //With Element['name_attribute_value']
+        
+    /*    
+      var uname3=document.myform.elements['m_username_field'];
+   
+             //or 
+             
+  // var uname3=document.myform.m_username_field;
+        
+       
+        console.log(uname3);
+        
+         console.log(uname3.name);
+         console.log(uname3.type);
+         console.log(uname3.id);
+        
+     */  
+         var uname=document.myform.uid;
+        uname.value='Bruce Wayne'; // seting value
+           console.log(uname.value);
+      
+        
+   </script>
+    
+     </body>
+  
+    
+</html> 

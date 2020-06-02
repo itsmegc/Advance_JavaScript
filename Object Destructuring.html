@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<h1>Object Destructuring </h1>
+    <script>
+  
+        
+        //Object Destructuring
+ /*    
+        var course={
+            
+            courseName:"JavaScript", // it is key so not have proplem like key
+            
+            duration:"SixMonth",
+            
+            tutor:"GeekyShows" };
+        
+        var{courseName:cname,duration:time,tutor:teacher}=course // give new name like that
+        
+       console.log(cname); 
+        console.log(teacher); 
+      */  
+        
+       /*
+        //var a,b;
+      // ( {a,b}={a:10,b:20});
+        
+        var {a:y=10,b:z=30} ={a:11,b:22};
+        
+        
+        console.log(y);
+        console.log(z);
+        */
+        
+        
+        
+        
+        //Object Passing to a function
+        
+         /* var course={
+            
+            courseName:"JavaScript", // it is key so not have proplem like key
+            
+            duration:"SixMonth",
+            
+            tutor:"GeekyShows" };
+        
+        
+          function show({courseName:cname,duration:time,tutor:teacher})
+        {
+            console.log(cname);
+        console.log(time);
+            console.log(teacher);
+        
+            
+        }
+        show (course);
+    
+        */
+        
+        
+        
+              //Object rturning from a function
+        
+      /*  var course={
+            
+            courseName:"JavaScript", // it is key so not have proplem like key
+            
+            duration:"SixMonth",
+            
+            tutor:"GeekyShows" };
+        
+        
+          function show(z)
+        {
+        return z;
+        }
+        
+         var{courseName:cname,duration:time,tutor:teacher}  =show(course);
+         console.log(cname);
+        console.log(time);
+            console.log(teacher);
+        */
+        
+        
+        
+         //Nested Object Destructuring
+        
+       var course={
+            
+            courseName:"JavaScript",
+            duration:"SixMonth",
+            tutor:"GeekyShows" ,
+             
+           student:{
+               
+               stu1:"Rahul",
+               
+               stu2:"Sonam"
+           }
+       
+       };
+          var{courseName,duration,tutor,student:{stu1,stu2}}=course
+        
+        console.log(courseName);
+       console.log(duration);
+        console.log(tutor);
+         console.log(stu1);
+        console.log(stu2);
+        
+        
+        
+        
+    </script>
+
+</body>
+<html>

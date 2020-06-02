@@ -1,0 +1,65 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+
+    <body>
+ 
+  <form action=""  name="myform" id="myformid">
+        
+        Username:<input type="text" name="m_username_field" id="uid"><small id="u_small"></small><br/><br/>
+        
+        Password:<input type="password" name="m_password_field" id="pid"><br/><br/>
+      
+       <input type="submit" name="m_sbtn" value="Submit">
+        </form><br/><br/>
+     
+     
+      
+    <script>
+ 
+        //seing Regular Expresstion
+        
+        function validatedata(){
+            
+            var ptrn= /^([^0-9\W]*)$/  // regular expression ,,W = space
+            
+            if(ptrn.test(document.myform.m_username_field.value)){
+                
+             /*document.getElementById("uid").style.backgroundColor ='green';
+         */       
+              //  document.myform.m_username_field.style.backgroundColor ='green';
+                
+                
+                document.getElementById("u_small").textContent ='User is Valid';
+                 document.getElementById("u_small").style.color='green';
+               
+                
+            }
+            
+            else{
+               /* document.getElementById("uid").style.backgroundColor ='pink';
+             */
+                 //document.myform.m_username_field.style.backgroundColor ='red';
+                
+                  document.getElementById("u_small").textContent ='User is InValid';
+            
+                document.getElementById("u_small").style.color='red';
+               
+        
+            }
+        }
+        
+       /* document.myform.m_username_field.addEventListener("keyup",validatedata);
+        */
+        document.myform.m_username_field.addEventListener("blur",validatedata);
+      
+   </script>
+    
+     </body>
+  
+    
+</html> 

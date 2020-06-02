@@ -1,0 +1,43 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+
+    
+    <div id="myid">
+    
+    <h1 >We are learning JavaScript 1</h1>
+        <h1>I am h1</h1>
+    </div>
+  
+    
+<script>
+    
+
+  var targetNode=document.getElementById("myid");
+    
+    
+      var nENode= document.createElement("h2");
+    
+      var nTNode= document.createTextNode("Text by Dark Knight");
+  
+    var nCNode= document.createTextNode("Comment by Dark Knight");
+  
+    
+    nENode.appendChild(nTNode);
+      targetNode.appendChild(nENode);
+    nENode.appendChild(nCNode);
+   
+    console.log(targetNode);
+    
+    
+    
+    
+    
+    
+  </script>
+
+</body>
+</html> 

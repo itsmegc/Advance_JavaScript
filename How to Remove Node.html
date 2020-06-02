@@ -1,0 +1,32 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+  <ul id="myul">
+              
+              <li>Jquery</li>
+              <li id="myang"> Angular JS</li>
+              <li>React JS</li>
+              <li id="myd3">D3 JS</li>
+        
+        
+        
+        </ul>
+    <div id="mydiv"></div>
+<script>
+
+   //remove node 
+    //parentNode.removeChild(target_node) wher deep =true | false
+    
+    
+   // var u =document.getElementById("myul"); //without parent id we can remove
+     var i =document.getElementById("myang");
+  //var delNode =  u.removeChild(u.firstElementChild);
+     var delNode =  i.parentNode.removeChild(i);
+    
+  </script>
+
+</body>
+</html> 

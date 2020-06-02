@@ -1,0 +1,89 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+<style>
+    .myclass1{
+        background-color: blue;
+        
+    }
+     .myclass2{
+        background-color: red;
+        font-size: 100px;
+    }
+    
+    
+    
+    </style>
+    
+    
+    
+</head>
+<body >
+   <p id="myp"  class="myclass2 myclass3" style="color:yellowgreen">Paragraph</p>
+    
+    <script>
+        
+        /*
+   The Element.classList is aread-only property which returns a live DOMTokenList collection of the class attributes of the element.
+   
+   Syntax:-
+   
+   var elementClassws = elementNodeReference.classList;
+
+*/
+
+    var p =document.getElementById("myp");
+        
+        var elementClass= p.classList;
+        
+      //  console.log(elementClass);
+       //   console.log(elementClass[1]);
+        
+        //PROPERTIES
+        console.log(elementClass.length);// length
+        console.log(elementClass.value);//value
+        
+        //Method
+        console.log(elementClass[0]);
+        console.log(elementClass.item(1));
+        
+        
+       //add class Method 
+elementClass.add("myclass4","myclass5","myclass6","myclass7");
+          console.log(p)
+        
+        // remove method
+        elementClass.remove("myclass6","myclass7");
+          console.log(p)
+        
+        //replace method
+        
+        elementClass.replace("myclass2","myclass1");
+          console.log(p)
+        
+        //contains method
+         var c= elementClass.contains("myclass1");
+          console.log(c)
+       
+        //toggle method
+        
+          elementClass.toggle("myclass2"); // help in animation
+          console.log(p)
+       
+        
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+  </script>
+
+</body>
+</html> 

@@ -1,0 +1,38 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+
+    
+    <div id="myid">
+    
+    <h1 >We are learning JavaScript 1</h1>
+        <h1>I am h1</h1>
+    </div>
+    
+    
+  
+    
+<script>
+    
+var x= document.getElementById("myid");
+    
+  
+    // creating & append text node
+    x.appendChild(document.createTextNode("I am King"));
+    
+    x.appendChild(document.createTextNode(" of the"));
+    
+     x.appendChild(document.createTextNode(" world"));
+    
+      x.normalize();  // using normalize merze n single
+
+    
+    console.log(x.childNodes);
+    
+  </script>
+
+</body>
+</html> 

@@ -1,0 +1,42 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+  <ul id="myul">
+              
+              <li>Jquery</li>
+              <li id="myang"> Angular JS</li>
+              <li>React JS</li>
+              <li id="myd3">D3 JS</li>
+        
+        
+        
+        </ul>
+  <spam id="myspan">Span<!----></spam>
+<script>
+
+   //replace node 
+    //parentNode.replaceChild(newChild,oldChild) 
+    
+    
+   var u =document.getElementById("myul"); 
+     var i =document.getElementById("myang");
+    //replacing with new node
+    // creating new element
+   /* var newChild=document.createElement("li");
+    newChild.textContent="ITEM X";
+    u.replaceChild(newChild,i)
+    */
+    //replacing with existing node
+    
+    var pan = document.getElementById("myspan");
+   
+    u.replaceChild(pan,i)
+    
+    
+  </script>
+
+</body>
+</html> 

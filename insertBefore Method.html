@@ -1,0 +1,57 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+
+    
+    <div >
+        <h3>JS frameworks</h3>
+        
+        <ul id="myul">
+              
+              <li>Jquery</li>
+              <li id="myang"> Angular JS</li>
+              <li>React JS</li>
+              <li id="myd3">D3 JS</li>
+        
+        
+        
+        </ul>
+    
+    
+    </div>
+    
+     
+  
+    
+<script>
+// The insertBefore() method is used to insert a node before the refrence node as a child of a specific parent node. If the given child is a reference to an existing node in the document,insertBefore()moves it from its current position to the new position.
+    
+    // Syntax :- var inserNode=parentNode.insertBefore(newNode,referenceNode);
+    
+     var parentNode=document.getElementById("myul");
+    // reating new li element
+    var newNode=document.createElement("li");
+   
+    //adding text 
+    n ewNode.textContent="node JS"
+    
+    
+    var refNode=document.getElementById("myang");
+    //insert new elwment
+   
+   parentNode.insertBefore(newNode,refNode);
+
+    
+    console.log(parentNode);
+    
+    
+    
+    
+    
+  </script>
+
+</body>
+</html> 

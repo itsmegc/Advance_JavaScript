@@ -1,0 +1,30 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body>
+ 
+   <h1>Key Event</h1>
+    
+    Name: <input type="text" id="mytext">
+   
+</body>
+    
+    <script>
+ 
+     var txt=document.getElementById("mytext");
+        
+        
+        function show(e)
+        {
+            
+            console.log(e.type+'  '+e.data);
+            }
+        
+        txt.addEventListener("textInput",show,false);
+    </script>
+    
+</html> 

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+    <h1 id="myid">We are learning JS<!-- This is coment--></h1>
+    
+    
+    <p id="myid1">I am Paragraph</p>
+    
+<script>
+    
+    /*
+    # nodeName  : return curent name of node
+    # nodeValue : retrun and set current node
+    # nodeType  : The read-only Node.nodeType property that repersent the type of node.
+    # textContent : 
+    # parentNode
+    # childNodes // s
+    # childNode
+    # firstChild
+    # lastChild
+    # previousSibling
+    # nextSibling
+    
+    ETC....
+    
+    
+    */
+    //document
+    document.write("---------Document------- <br><br>");
+    document.write(document.nodeName+"<br>");
+    document.write(document.nodeValue+"<br>");
+    document.write(document.nodeType+"<br>");
+    console.log(document.nodeName);
+    console.log(document.nodeValue);
+    console.log(document.nodeType);
+    
+    
+    
+    
+    //element
+    document.write("---------Element------- <br><br>");
+    var elm=document.getElementById("myid");
+    document.write(elm.nodeName+"<br>");
+    document.write(elm.nodeValue+"<br>");
+    document.write(elm.nodeType+"<br>");
+    console.log(elm.nodeName);
+    console.log(elm.nodeValue);
+    console.log(elm.nodeType);
+    
+      
+    //Text 
+    document.write("---------Text------- <br><br>");
+    var txt=document.getElementById("myid");
+    document.write(txt.firstChild.nodeName+"<br>");// firstChild.nextSibling for comment
+    
+  
+    document.write(txt.firstChild.nodeValue+"<br>");
+     txt.firstChild.nodeValue="Set Value";// set value
+     document.write(txt.firstChild.nodeValue+"<br>");
+    
+    
+    document.write(txt.firstChild.nodeType+"<br>");
+    console.log(txt.firstChild.nodeName);
+    console.log(txt.firstChild.nodeValue);
+    console.log(txt.firstChild.nodeType);
+    
+    
+    
+
+    
+  </script>
+
+</body>
+<html>

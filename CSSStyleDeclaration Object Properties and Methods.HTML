@@ -1,0 +1,32 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+   <p id="myp"  style="background-color: darkgray;color: black   ; font-size: 100px">Paragraph</p>
+    
+    <script>
+        /*
+        The CSSStyleDeclaration object represents a collection of CSS property-vale pairs
+        */
+
+    var p =document.getElementById("myp");
+     
+        var cs= p.style;
+        
+       /*cs.cssText="font-size: 70px;color:blue";
+       console.log(p);*/
+        
+        console.log(cs.length);
+        console.log(p);
+        
+        //Method
+        
+        console.log(cs.item(1));
+        
+        
+  </script>
+
+</body>
+</html> 

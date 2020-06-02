@@ -1,0 +1,66 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body>
+ 
+   <h1>setTimeout and clearTimeout Methodss</h1>
+    
+    <p id="myp">A paragraph (from the Ancient Greek παράγραφος paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+    
+    </p>
+    
+    <button type="button" id="btn">Clear Time out</button>
+    
+     </body>
+    
+    <script>
+        
+               //setTimeot()  
+        
+        
+        
+ /*function changeCSS(){
+     
+     
+     document.getElementById("myp").style='color:red';
+ }
+   
+        //setTimeot()
+        
+    setTimeout(changeCSS,2000);   // fnction runs after 2000 mill sec
+        
+    */    
+     
+ /*        setTimeout(function(){
+     
+     
+     document.getElementById("myp").style='color:red';
+ }
+   
+   ,2000);   // fnction runs after 2000 mill sec
+   
+        */
+   
+        
+        
+        
+    var timeoutID=setTimeout(()=>  {
+            
+                
+     document.getElementById("myp").style='color:blue';},5000);
+        
+        
+       function clrtime(){
+           
+           clearTimeout(timeoutID);
+           
+       }
+        document.getElementById("btn").addEventListener("click",clrtime);
+   
+   </script>
+    
+</html> 

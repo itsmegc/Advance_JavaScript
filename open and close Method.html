@@ -1,0 +1,52 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body>
+ 
+   <h1>Window Open</h1>
+    
+   <!-- <button type="button" id="btn">Create New Window</button>
+   --> 
+    
+     <button type="button" id="kloj">close new Window</button>
+     
+</body>
+    
+    <script>
+    
+        
+/*        
+     function createWindow(){
+         
+         window.open();
+     }   
+             
+       
+        document.getElementById("btn").addEventListener("click",createWindow);
+        */
+        
+        
+        //open in new window
+        
+        
+        
+        
+     var x=  window.open("https://www.youtube.com/watch?v=07BYO2dCYAE&list=PLbGui_ZYuhihZ-pDxNZuQ7xOQ8IS2z3XI&index=100","_blank","height=400,width=600");
+        
+        
+        function ekjit(){
+            
+            x.close();
+        }
+        
+        document.getElementById("kloj").addEventListener("click",ekjit);
+        
+        
+        
+   </script>
+    
+</html> 

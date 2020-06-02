@@ -1,0 +1,73 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body >
+  <h1 class='text-center'>Add Event Listener</h1>
+  
+         
+
+   
+   <button id="mybtn" type="button" class="btn btn-primary ">click ME</button>
+         
+    
+</body>
+    
+    <script>
+        
+        /*
+ This method is introduced by DOM2,sed to engage an event handler in a page.
+ 
+ SYNTAX :- Object.addEventListener(event,handler,capturePhase);*/
+        
+     
+         /*    
+         var btn=document.getElementById("mybtn") ;
+   
+   btn.addEventListener("click",function(){alert("Button click");});
+        
+        
+     
+        
+       // btn.addEventListener("click",show);
+        btn.addEventListener("mouseover",show);
+       
+        
+        // create function
+        
+        function show()
+        
+    {
+        
+        alert("I am created function");
+        
+    }
+        */ 
+        
+        // without overwriting
+        
+        
+        function disp1()
+        {
+            
+            alert("Have a PROBLEM")
+        }
+         function disp2()
+        {
+            
+            alert("End of PROBLEM")
+        }
+        
+        var btn=document.getElementById("mybtn") ;
+
+        btn.addEventListener("click",disp1);
+        btn.addEventListener("click",disp2);
+        
+        
+    </script>
+</html> 

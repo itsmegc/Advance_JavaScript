@@ -1,0 +1,82 @@
+<!Doctype html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body> 
+    <h1>We r learning Js</h1>
+           <h1 class="geek myclass">We are Learning JS</h1>
+       
+    <h2>What is going on</h2> 
+    
+    <p id="geek">Hello <span class="myspan" >Killer</span> boy <em>World</em> </p>
+        <p class="find">Hello girl </p>
+    
+    <div id="show1">
+    <p> 1st p inside div</p>
+      <p class="geek"> 2nd p inside div</p>    
+    </div>
+    
+   
+    <p id="show1"> 1st p inside div</p>
+      
+     <div id="show2">I am Something div
+    </div>
+       <div class="show2">I am Something div
+    </div>
+    
+    <script>
+        
+        //query seclector all use CSS selector
+        
+    //Element selctor
+        
+        var result= document.querySelectorAll("p,h1");//return all element
+        
+        document.write(result+"<br>");
+        console.log(result);
+    
+        //Id Selector
+        
+        
+    var result1= document.querySelectorAll("#show1");//.
+        
+        document.write(result1+"<br>");
+        console.log(result1);
+    
+    // Class selecter 
+     var result2= document.querySelectorAll(".geek");//use .
+        
+        document.write(result2+"<br>");
+        console.log(result2);
+        
+        
+        //Attribute Seclector
+        
+        //var result3= document.querySelectorAll("div[class]"); 
+        var result3= document.querySelectorAll("div[id='show1']"); 
+        
+        document.write(result3+"<br>");
+        console.log(result3);
+        
+        //more soecific
+        
+        var result4=document.getElementById("geek").querySelectorAll("span.myspan");
+        document.write(result4+"<br>");
+        console.log(result4);
+        
+        
+        //child selector
+        var result5= document.querySelectorAll("#geek>span.myspan");//use .
+        
+        document.write(result5+"<br>");
+        console.log(result5);
+        
+        
+        
+        
+    
+  </script>
+
+</body>
+<html>

@@ -1,0 +1,37 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body>
+ 
+   <h1>setInterval and clearInterval Methods</h1>
+    <div id="mydiv"></div>
+    
+    <button type="button" id="btn">clear Interval</button>
+    
+     </body>
+    
+    <script>
+        
+     var intervalID=setInterval(()=>
+                                {
+         document.getElementById("mydiv").textContent+="Hello ";},2000) 
+                               
+         function clrtime(){
+             
+             
+             clearInterval(intervalID);
+         }                    
+            document.getElementById("btn").addEventListener("click",clrtime);
+            
+           
+    
+        
+        
+
+   </script>
+    
+</html> 

@@ -1,0 +1,40 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body >
+  <h1>Remove Event Listener</h1>
+  
+         
+    <button id="mybtn">click ME</button>
+   
+   a
+         
+    
+</body>
+    
+    <script>
+        
+     function disp1()
+        {
+            
+            alert("Have a PROBLEM")
+        }
+         function disp2()
+        {
+            
+            alert("End of PROBLEM")
+        }
+        
+        var btn=document.getElementById("mybtn") ;
+
+        btn.addEventListener("click",disp1,false);
+        btn.addEventListener("click",disp2,true);
+        
+      btn.removeEventListener("click",disp2,true);a
+        
+    </script>
+</html> 

@@ -1,0 +1,70 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body >
+  <table border="1" id="mytab">
+   <!--  <caption> My Table Caption </caption>
+   --> 
+      <thead>
+      <tr>
+          
+          <th>ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          
+          </tr>
+      
+      
+      
+      </thead>
+      <tbody>
+      <tr>
+          <th>11</th>
+          <th>Rahul</th>
+          <th>JavaScript</th>
+          
+          </tr>
+          <tr>
+          <th>22</th>
+           <th>Sonam</th>
+              <th>PHP</th>
+          
+          
+          </tr>
+      </tbody>
+    <tfoot>
+      <tr>
+        
+        <th>55</th>
+        <th>Rohan</th>
+          <th>JSP</th>
+        
+        </tr>
+      
+      
+      </tfoot>
+    
+    </table> 
+    <script>
+ var table=document.getElementById("mytab");
+        
+        //insertRow
+   var row=table.insertRow(1);// -1 for last
+      // console.log(row);
+     
+       row.insertCell(0).textContent="New Data"; //insert cell
+        
+        
+        //delete row
+        
+        table.deleteRow(0);
+        
+        
+  </script>
+
+</body>
+</html> 

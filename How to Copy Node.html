@@ -1,0 +1,34 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+  <ul id="myul">
+              
+              <li>Jquery</li>
+              <li id="myang"> Angular JS</li>
+              <li>React JS</li>
+              <li id="myd3">D3 JS</li>
+        
+        
+        
+        </ul>
+    <div id="mydiv"></div>
+<script>
+
+    //targetNode.cloneNode(deep) where deep = true | false
+    
+    var u =document.getElementById("myul");
+   // var dublicateNode= u.cloneNode(false);
+    var dublicateNode= u.cloneNode(true);
+   // console.log(dublicateNode);
+    console.log(document.body);
+      var div =document.getElementById("mydiv");
+    div.appendChild(dublicateNode);
+     console.log(div);
+     console.log(document.body);
+  </script>
+
+</body>
+</html> 

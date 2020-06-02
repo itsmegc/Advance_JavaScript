@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+<h1>Destructuring </h1>
+    <script>
+  
+        
+        //Destructuring
+        
+    /*//var a=["JavaScript","SixMonths","GeekyShows"];
+         var a=["JavaScript",,"GeekyShows"];//way of skip sixMonth
+   
+        var[courseName, duration, tutor] =a;
+    
+        console.log(courseName);
+       // console.log(duration);
+        console.log(tutor);
+    */
+        
+     /*   var a,b;
+        [a=40,b=20]=[10];
+        
+        console.log(a);
+        console.log(b);
+        
+        */
+        
+             
+        //Array passing to a function Destructuring
+        
+        
+       /* var arr=[10,20,30];
+        
+        function show([value1,value2,value3])
+        {
+            console.log(value1);
+        console.log(value2);
+            console.log(value3);
+        
+            
+        }
+        show (arr);
+        */
+        
+        
+        
+        //Array returning from a function Destructuring
+        
+        
+   /*      var arr=[10,20,30];
+        
+        function show(z)
+        {
+            return z;
+            
+        }
+    //  var x =  show (arr);
+   // var [value1,value2,value3]  = x;
+     
+        
+         var [value1,value2,value3]  =show(arr);
+        console.log(value1);
+        console.log(value2);
+            console.log(value3);
+        */
+        
+        
+        
+        //Nested Array Destructuring
+        
+        
+        var a=["JavaScript","SixMonths","GeekyShows",["Rahul","Sonam"]];
+     
+         var[courseName, duration, tutor,[stu1,stu2]] =a;
+    
+        console.log(courseName);
+       console.log(duration);
+        console.log(tutor);
+         console.log(stu1);
+        console.log(stu2);
+        
+        
+        
+    </script>
+
+</body>
+<html>

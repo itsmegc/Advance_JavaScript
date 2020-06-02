@@ -1,0 +1,58 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body>
+ 
+   <h1>Moving Window</h1>
+    
+     
+     <button type="button" id="btn1">open window</button>
+        
+ <button type="button" id="btn2">move window</button>
+   
+ 
+     
+</body>
+    
+    <script>
+ 
+        
+        var newWindow;
+        
+        
+        
+        function openWin(){
+            
+            newWindow=window.open("","newWindow","width=300,height=200");
+            
+            newWindow.docment.write("New Window mwin")
+            
+        }
+          
+        
+        
+        function moveWin(){
+      // newWindow.moveBy(200,200);  // move everytime
+            
+            
+             newWindow.moveTo(200,200); // move once
+      
+            
+            newWindow.focus();
+        }
+       
+      
+        
+        
+        document.getElementById("btn1").addEventListener("click",openWin);
+        
+         document.getElementById("btn2").addEventListener("click",moveWin);
+        
+
+   </script>
+    
+</html> 

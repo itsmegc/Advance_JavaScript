@@ -1,0 +1,34 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body >
+
+    
+    <div id="mydiv">
+        
+        <h1 id="myh1"> Hello1 </h1>
+         
+        <h2 id="myh2"> Hello2 </h2>
+         
+        <h3 id="myh3"> Hello3 </h3>
+    
+    
+    </div>
+    
+<script>
+    
+    //targetElement.insertAdjacentText("position",text)
+    //position: 'beforebegin' | 'afterbegin' | 'beforeend' | 'afterend'
+    
+var parentNode=document.getElementById("mydiv");
+    var h=document.getElementById("myh2");
+    var txt=" Hello Whats Up ";
+      h.insertAdjacentText('beforebegin',txt);
+  
+    console.log(parentNode);
+  </script>
+
+</body>
+</html> 

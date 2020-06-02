@@ -1,0 +1,66 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body >
+  <table border="1" id="mytab">
+   <!--  <caption> My Table Caption </caption>
+   --> 
+      <thead>
+      <tr>
+          
+          <th>ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          
+          </tr>
+      
+      
+      
+      </thead>
+      <tbody id="mybody">
+      <tr>
+          <th>11</th>
+          <th>Rahul</th>
+          <th>JavaScript</th>
+          
+          </tr>
+          <tr>
+          <th>22</th>
+           <th>Sonam</th>
+              <th id="mytd">PHP</th>
+          
+          
+          </tr>
+      </tbody>
+    <tfoot>
+      <tr>
+        
+        <th>55</th>
+        <th>Rohan</th>
+          <th>JSP</th>
+        
+        </tr>
+      
+      
+      </tfoot>
+    
+    </table> 
+    <script>
+ var table=document.getElementById("mytab");
+        
+   var myrow = table.rows;
+      //  console.log(myrow[2].cells.item(0));
+        
+       // console.log(myrow[2].cells[1].innerHTML);
+        
+        myrow[2].cells[1].innerHTML="KAJAL"; // new value assign
+        
+        
+  </script>
+
+</body>
+</html> 

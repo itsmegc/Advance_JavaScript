@@ -1,0 +1,78 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+<body >
+ <h1> Event Methods</h1>
+    
+    <div id="one" style="width:100px;height: 100px;background-color: red">
+    
+    <div id="two" style="width:60px;height: 60px;background-color: black">
+   
+    
+    </div>
+    
+    
+        
+    <script>
+  
+        function div1(e){
+            
+            
+            console.log(e.type);
+            
+        }
+          function div2(e){
+            
+            
+            console.log(e.type);
+            
+        }
+        
+        var divOne= document.getElementById("one");
+        
+        var divTwo= document.getElementById("two");
+        
+        
+        
+        
+   /*     divTwo.addEventListener("mousedown",div1,false);
+         divTwo.addEventListener("mouseup",div1,false);
+      divTwo.addEventListener("click",div1,false);
+         divTwo.addEventListener("dblclick",div1,false);
+   *//* divTwo.addEventListener("mouseenter",div1,false);
+       divTwo.addEventListener("mouseleave",div1,false);
+       */
+          /*  divTwo.addEventListener("mouseover",div1,false);
+        divTwo.addEventListener("mouseout",div1,false);
+        */
+       // divTwo.addEventListener("mousemove",div1,false);
+        
+       // divTwo.addEventListener("contextmenu",div1,false); //right click
+        
+        
+        
+        
+        
+        
+      
+        
+        
+         divTwo.addEventListener("mouseover",div2,false);// its bubble up the event 
+        
+        //bubleup= click event genrate for bo th own and parent 
+         divOne.addEventListener("mouseover",div1,false);
+      
+        
+       
+        
+        
+    </script>
+    
+    
+</body>
+
+</html> 

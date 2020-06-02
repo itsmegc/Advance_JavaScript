@@ -1,0 +1,68 @@
+<html >
+<head>
+<title>JAVASCRIPT</title>
+    
+    
+    
+</head>
+
+    <body>
+ 
+  <form action=""  name="myform" id="myformid">
+        
+        Username:<input type="text" name="m_username_field"><br/><br/>
+        
+        Password:<input type="password" name="m_password_field"><br/><br/>
+      
+       <input type="submit" name="m_sbtn" value="Submit">
+        </form><br/><br/>
+     <hr><hr> <hr>
+        
+   <form action=""  name="yourform" id="yourformid">
+        
+        Username:<input type="text" name="y_username_field"><br/><br/>
+        
+        Password:<input type="password" name="y_password_field"><br/><br/>
+      
+       <input type="submit" name="y_sbtn" value="Submit"><br/><br/>
+        </form>
+     
+      
+    <script>
+        
+   //1.     //With IndexNumber
+        
+    var mform =    document.forms[0];
+        
+        console.log(mform);
+        
+        
+     //2.   //With Name attribute using square bracket
+        
+   var form =    document.forms['myform'];
+        
+        console.log(form);
+        
+        
+          //3.   //With Name attribute using dot
+        
+   var dform =    document.myform;
+        
+        console.log(dform);
+     
+        
+           //4.   //With getElementById
+        
+   var gform =  document.getElementById("yourformid") ;
+        
+        console.log(gform);
+     
+        
+        
+        
+   </script>
+    
+     </body>
+  
+    
+</html> 

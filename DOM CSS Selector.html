@@ -1,0 +1,153 @@
+<!DOCTYPE htmlL>
+<html>
+
+<head>
+    
+    <title>DOM CSS Selector </title>
+    
+    </head>
+
+<body>
+     <h1 title="myheading" >Heading 1</h1>
+      <img src="jobs.jpg" alt="steveJOBS" width="30%" height="20%">
+      <img src="Koala.jpg" alt="KolaImage" width="40%" height="20%">
+       <div>
+    <ul id="myl">
+        
+        <li class="game">Item 1</li>
+        <li class="supergame">Item 2</li>
+        <li class="game-super">Item 3</li>
+        <li class="gamesuper">Item 4</li>
+        <li class="super-game">Item 5</li>
+        <li class="game super">Item 6</li>
+        <li class="super game">Item 7</li>
+         <li class="super">Item 8</li>  
+           
+           
+           </ul>
+    
+    </div>
+    
+      
+    
+    <p title="mypara1" class="red black"> Thos is paragraph 1</p>
+        <p title="mypara2" class="red"> Thos is paragraph 2</p>
+            <p title="mypara3" class="black"> Thos is paragraph 3</p>
+            <p title="mypara4" id="book"> Thos is paragraph 4 </p>
+    <p>This IS KING of world</p>
+    <h3 class="red">Heading 3</h3>
+        <h4 id="book">Heading 3</h4>
+    
+     <script>
+    //CSS Selector DOM
+   
+         
+         /* Element Selector   
+         
+    var list= document.querySelectorAll('p');
+         
+         console.log(list[0]);
+    
+    
+    */
+         
+         
+         
+     /*    Group Selector
+     
+     var list= document.querySelectorAll('div,p,li');
+   console.log(list);
+    */
+    
+         
+         
+        /* Universal Selector
+         
+         var list= document.querySelectorAll('*');
+   console.log(list);
+    
+         */
+         
+         
+         
+         
+         
+         //"Class selector or Style class"
+         
+         /* 1.Universal Style Class
+          
+         var list= document.querySelectorAll('.game');
+
+          console.log(list);
+   */
+         
+         /* 2. Element Specific Style Class
+         
+          var list= document.querySelectorAll('p.red.black');
+
+          console.log(list);
+   */
+         
+         
+         
+        
+        /* ID Selector
+         
+         
+          var list= document.querySelectorAll('p#book');
+
+          console.log(list);
+ */
+     
+         
+         
+         
+       /*  Attribute Selector
+          
+          
+          // var list=document.querySelectorAll('p[title="mypara1"]');
+
+        //  var list= document.querySelectorAll('p[title]');
+         
+         
+         //  var list= document.querySelectorAll('[class ~= "game"]);// have game in the end or beginning excluding - and space
+          //  var list= document.querySelectorAll('[class |= "game"]);//first word must be game
+          //  var list= document.querySelectorAll('[class ^= "game"]);//start with game
+          //  var list= document.querySelectorAll('[class $= "game"]);//end with game
+         
+          //  var list= document.querySelectorAll('[class * = "ga"]);//return every  game
+         
+         
+         
+ var list= document.querySelectorAll('img[width="30%"][height="20%"]');
+
+          console.log(list);
+
+      */   
+         
+         
+         
+         
+        /* pseudo Class
+         var list= document.querySelectorAll('li:first-child');
+
+         // var list= document.querySelectorAll('li:nth-child(odd)'); //nth child
+ // var list= document.querySelectorAll('li:nth-last-child(1)'); //nth child last is 1
+
+
+          console.log(list);
+          
+                    
+
+*/
+   var list= document.querySelectorAll(':empty');//don't have any child
+
+      console.log(list);
+          
+         
+    </script>
+      
+      
+    </body>
+
+</html>

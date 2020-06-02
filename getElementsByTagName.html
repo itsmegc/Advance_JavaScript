@@ -1,0 +1,99 @@
+<!Doctype html>
+<head>
+<title>JAVASCRIPT</title>
+
+</head>
+<body>
+    
+    <h1>We are Learning JS</h1>
+       <h1>What u looking</h1>
+    <h2>What is going on</h2> 
+    
+    <p id="geek">Hello <span style="color:blue">Killer</span> boy <em>World</em> </p>
+        <p id="find">Hello girl </p>
+    
+    <div>
+    <p> 1st p inside div</p>
+      <p> 2nd p inside div</p>    
+    
+    
+    
+    </div>
+    
+    
+    
+<script>
+
+   /* 
+    
+    document.getElementById("ID_Name");// get the element with specific ID.
+    
+    document.getElementsByTagName("");//Get all the specified element by the Tag Name
+    
+    
+     document.getElementsByClassName("");//Get all the specified element by the Class Name
+    
+     document.querySelector("");// It returns first match of the passed selector string
+    
+    document.querySelectorAll(" ");// It returns a node list of DOM elements that match the query.
+    
+    */
+    
+  var result =     document.getElementsByTagName("*");//return all tag
+    
+    
+    var result1 =     document.body.getElementsByTagName("*");//return all tag inside body only
+    
+    /*
+   tag div cant be use
+    document.div.getElementsByTagName("*");
+    */
+    
+    
+    
+      var result2 =     document.getElementsByTagName("p");
+    
+    
+    
+    var getSpan = document.getElementById("geek");
+     var result3 = getSpan.getElementsByTagName("span");
+    
+    
+    //or     var result3 = document.getElementById("geek").getElementsByTagName("span");  
+    
+    
+    //Length property
+    
+     var result4 =     document.getElementsByTagName("p").length;//length
+    
+    
+
+    
+    
+       document.write(result);
+    console.log(result);
+    
+    document.write(result1);
+    console.log(result1);
+    
+    document.write(result2);
+    console.log(result2);
+    
+        document.write(result3+"<br>");
+    console.log(result3);
+    
+      document.write(result4);
+    console.log("length "+result4+"<br>");
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </script>
+
+</body>
+<html>
